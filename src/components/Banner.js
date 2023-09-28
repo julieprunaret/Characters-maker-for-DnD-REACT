@@ -1,5 +1,5 @@
-import dragon from "../../assets/dragon.svg"
-import "../../styles/Banner.css"
+import dragon from "../assets/dragon.svg"
+import "../styles/Banner.css"
 
 function Banner () {
     return (

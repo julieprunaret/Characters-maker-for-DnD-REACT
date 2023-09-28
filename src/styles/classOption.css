@@ -1,0 +1,24 @@
+.classOption-button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    max-width: 150px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.classOption-button:hover {
+    border: 1px dashed white;
+}
+
+.classOption-img {
+    width: 70px;
+}
+
+p.classOption-text {
+    margin: 10px auto 0 auto;
+}
+
+.classOption-image {
+    width: 70px;
+}

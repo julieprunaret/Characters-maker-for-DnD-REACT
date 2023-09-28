@@ -21,7 +21,7 @@ form {
     color: white;
   }
 
-  button {
+  .AddCharacter-button {
     background-color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
@@ -32,7 +32,26 @@ form {
     cursor: pointer;
   }
   
-  button :hover {
+  .AddCharacter-button :hover {
     opacity: 0.8;
     transition: 1s;
   }
+
+  .AddCharacter-classes {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .AddCharacter-classes button {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .AddCharacter-details {
+    opacity: 0.6;
+  }
+

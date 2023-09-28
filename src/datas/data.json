@@ -1,0 +1,185 @@
+{
+  "characteristics": {
+    "list": [
+      {
+        "name": "strength",
+        "label": "Strength"
+      },
+      {
+        "name": "dexterity",
+        "label": "Dexterity"
+      },
+      {
+        "name": "constitution",
+        "label": "Constitution"
+      },
+      {
+        "name": "intelligence",
+        "label": "Intelligence"
+      },
+      {
+        "name": "wisdom",
+        "label": "Wisdom"
+      },
+      {
+        "name": "charisma",
+        "label": "Charisma"
+      }
+    ],
+    "pointsNumber": 30,
+    "min": 6,
+    "max": 18,
+    "default": 6
+  },
+  "races": [
+    {
+      "name": "human",
+      "label": "Human",
+      "description": "Blablabla",
+      "characteristics": [
+        {
+          "name": "strength",
+          "modifier": 1
+        },
+        {
+          "name": "dexterity",
+          "modifier": 1
+        },
+        {
+          "name": "constitution",
+          "modifier": 1
+        },
+        {
+          "name": "intelligence",
+          "modifier": 1
+        },
+        {
+          "name": "wisdom",
+          "modifier": 1
+        },
+        {
+          "name": "charisma",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "name": "elf",
+      "label": "Elf",
+      "description": "Blablabla",
+      "characteristics": [
+        {
+          "name": "dexterity",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "name": "halfelin",
+      "label": "Halfelin",
+      "description": "Blablabla",
+      "characteristics": [
+        {
+          "name": "charisma",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "name": "halforc",
+      "label": "Half-Orc",
+      "description": "Blablabla",
+      "characteristics": [
+        {
+          "name": "strength",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "name": "dwarf",
+      "label": "Dwarf",
+      "description": "Blablabla",
+      "characteristics": [
+        {
+          "name": "constitution",
+          "modifier": 2
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "barbarian",
+      "label": "Barbarian",
+      "description": "Blablabla",
+      "img": "images/barbarian.svg",
+      "characteristics": [
+        {
+          "name": "strength",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "name": "thief",
+      "label": "Thief",
+      "description": "Blablabla",
+      "img": "images/thief.svg",
+      "characteristics": [
+        {
+          "name": "dexterity",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "name": "wizard",
+      "label": "Wizard",
+      "description": "Blablabla",
+      "img": "images/wizard.svg",
+      "characteristics": [
+        {
+          "name": "intelligence",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "name": "bard",
+      "label": "Bard",
+      "description": "Blablabla",
+      "img": "images/bard.svg",
+      "characteristics": [
+        {
+          "name": "charisma",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "name": "cleric",
+      "label": "Cleric",
+      "description": "Blablabla",
+      "img": "images/cleric.svg",
+      "characteristics": [
+        {
+          "name": "wisdom",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "name": "warrior",
+      "label": "Warrior",
+      "description": "Blablabla",
+      "img": "images/warrior.svg",
+      "characteristics": [
+        {
+          "name": "constitution",
+          "modifier": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 import '../styles/App.css';
-import Banner from './molecules/Banner';
-import NewCard from './organisms/NewCard';
+import Banner from './Banner';
+import AddCharacter from './AddCharacter';
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <NewCard />
+      <AddCharacter />
     </div>
   );
 }

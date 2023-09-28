@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-dwarf">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="dwarf" clip-path="url(#clip-dwarf)">
+    <g id="noun-knight-4277526_1_" data-name="noun-knight-4277526(1)" transform="translate(12.903 0)">
+      <g id="Groupe_1" data-name="Groupe 1" transform="translate(0 0)">
+        <path id="Tracé_1" data-name="Tracé 1" d="M17.226,16.451v3.226h3.226V16.451h3.226V13.225H20.452V10H17.226v3.226H14v3.226Z" transform="translate(8.581 6.129)" fill="#fff"/>
+        <rect id="Rectangle_8" data-name="Rectangle 8" width="4" height="3" transform="translate(19 55)" fill="#fff"/>
+        <rect id="Rectangle_9" data-name="Rectangle 9" width="3" height="3" transform="translate(26 55)" fill="#fff"/>
+        <rect id="Rectangle_10" data-name="Rectangle 10" width="4" height="4" transform="translate(19 61)" fill="#fff"/>
+        <rect id="Rectangle_11" data-name="Rectangle 11" width="3" height="4" transform="translate(26 61)" fill="#fff"/>
+        <rect id="Rectangle_12" data-name="Rectangle 12" width="3" height="3" transform="translate(58 55)" fill="#fff"/>
+        <rect id="Rectangle_13" data-name="Rectangle 13" width="3" height="3" transform="translate(65 55)" fill="#fff"/>
+        <rect id="Rectangle_14" data-name="Rectangle 14" width="3" height="4" transform="translate(58 61)" fill="#fff"/>
+        <rect id="Rectangle_15" data-name="Rectangle 15" width="3" height="4" transform="translate(65 61)" fill="#fff"/>
+        <path id="Tracé_2" data-name="Tracé 2" d="M34,16.451h3.226v3.226h3.226V16.451h3.226V13.225H40.452V10H37.226v3.226H34Z" transform="translate(20.838 6.129)" fill="#fff"/>
+        <path id="Tracé_3" data-name="Tracé 3" d="M74.193,32.681A32.832,32.832,0,0,0,47.029.3a20.1,20.1,0,0,0-6.961,0A32.832,32.832,0,0,0,12.9,32.681v27A20.963,20.963,0,0,0,20.968,100H67.742V87.1h3.226V82.258a14.488,14.488,0,0,0-5.413-11.29h8.639Zm-25.806-.424H70.948c0,.142.019.282.019.424v15.7H48.387Zm22.331-3.226H48.387V3.908A29.566,29.566,0,0,1,70.717,29.031ZM45.161,3.308V50a8.077,8.077,0,0,0,6.364,7.884,11.8,11.8,0,0,1-7.977,9.769,11.8,11.8,0,0,1-7.977-9.769A8.075,8.075,0,0,0,41.935,50V3.308A16.84,16.84,0,0,1,45.161,3.308ZM22.581,93.547h3.226v3.226H22.581Zm3.226-3.226H22.581V87.095h3.226Zm-6.452-3.226v3.1a11.268,11.268,0,0,1-6.273-19.226h8.46a14.488,14.488,0,0,0-5.413,11.29v4.839ZM16.148,32.256H38.71V48.385H16.129v-15.7C16.129,32.539,16.145,32.4,16.148,32.256ZM38.413,51.611a4.832,4.832,0,0,1-4.542,3.226H32.258V56.45a15.013,15.013,0,0,0,5.1,11.29H16.129V51.611ZM35.484,70.966v4.8a8.05,8.05,0,0,1-3.063-4.8Zm3.226,0h3.226v6.452H40.322a8.056,8.056,0,0,1-1.613-.163Zm6.452,0h3.226v6.289a8.056,8.056,0,0,1-1.613.163H45.161Zm6.452,0h3.063a8.045,8.045,0,0,1-3.063,4.8v-4.8ZM38.71,3.908V29.031H16.379A29.566,29.566,0,0,1,38.71,3.908ZM3.226,79.03a17.771,17.771,0,0,1,9.677-15.8V67a14.487,14.487,0,0,0,6.452,26.455v3.239A17.761,17.761,0,0,1,3.226,79.03ZM61.29,96.772V93.547h3.226v3.226Zm3.226-6.452H61.29V87.095h3.226Zm3.226-8.064v1.613H61.29V80.643H58.064V96.772h-12.9V90.321h3.226V87.095H45.161V83.869H41.935v3.226H38.71v3.226h3.226v6.452h-12.9V80.643H25.806v3.226H19.355V82.256a11.3,11.3,0,0,1,9.823-11.184,11.3,11.3,0,0,0,11.145,9.571h6.452a11.3,11.3,0,0,0,11.145-9.571A11.3,11.3,0,0,1,67.742,82.256ZM49.735,67.74a15.013,15.013,0,0,0,5.1-11.29V54.837H53.226a4.832,4.832,0,0,1-4.542-3.226H70.967V67.74Z" transform="translate(0 0)" fill="#fff"/>
+        <path id="Tracé_4" data-name="Tracé 4" d="M28.129,22H12v9.677H28.129ZM24.9,28.451H15.226V25.225H24.9Z" transform="translate(7.355 13.484)" fill="#fff"/>
+        <path id="Tracé_5" data-name="Tracé 5" d="M32,22v9.677H48.129V22Zm12.9,6.452H35.226V25.225H44.9Z" transform="translate(19.613 13.484)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
