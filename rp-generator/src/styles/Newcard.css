@@ -1,0 +1,38 @@
+form {
+    border: 1px dashed white;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+  }
+  form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  input, select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+  }
+
+  button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: fit-content;
+    width: -moz-fit-content;
+    color: black;
+    cursor: pointer;
+  }
+  
+  button :hover {
+    opacity: 0.8;
+    transition: 1s;
+  }

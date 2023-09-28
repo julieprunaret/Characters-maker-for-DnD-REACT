@@ -1,0 +1,54 @@
+{   
+    "characters" : {
+        "class" : [
+            {
+                "id": "1rang",
+                "name" : "Ranger",
+                "description": "A warrior who combats threats on the edges of civilization",
+                "modificator": {
+                    "dexterity": 1
+                }
+            },
+            {
+                "id": "1Wiz",
+                "name" : "Wizard",
+                "description": "A scholarly magic-user capable of manipulating the structures of reality",
+                "modificator": {
+                    "intelligence": 2
+                }
+            },
+            {
+                "id": "1Cle",
+                "name" : "Cleric",
+                "description": "A priestly champion who wields divine magic in service of a higher power",
+                "modificator": {
+                    "wisdom": 1
+                }
+            },
+            {
+                "id": "1Pal",
+                "name" : "Paladin",
+                "description": "A holy warrior bound to a sacred oath",
+                "modificator": {
+                    "strength": 1
+                }
+            },
+            {
+                "id": "1Bar",
+                "name" : "Bard",
+                "description": "An inspiring magician whose power echoes the music of creation",
+                "modificator": {
+                    "charisma": 2
+                }
+            }
+        ],
+        "skills" : {
+            "intelligence" : 1,
+            "strength" : 1,
+            "wisdom" : 1,
+            "dexterity" : 1,
+            "charisma" : 1
+        },
+        "name": ""
+    }
+}

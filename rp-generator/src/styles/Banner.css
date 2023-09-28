@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Fondamento", cursive;
+    color: white;
+    margin: 20px 0;
+  }
+
+  .dragon {
+    width: 50px;
+  }
+  
+  .dragon_right {
+    transform: scaleX(-1);
+  }
