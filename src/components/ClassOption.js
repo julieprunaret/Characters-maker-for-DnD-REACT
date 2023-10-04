@@ -1,16 +1,14 @@
 import "../styles/classOption.css"
 
-function ClassOption ({characterClass, image}) {
+function ClassOption ({characterClass, setCharacterClass, classe}) {
     function chooseClass(e){
         e.preventDefault();
-        console.log(characterClass)
-
+        setCharacterClass(characterClass=classe);
     }
     return (
-        <button className="classOption-button" key={characterClass} onClick={(e) => chooseClass(e)}>
-            {/* <img src={`../assets/characters/${characterClass}.svg`} alt={characterClass} className={`classOption-img ${imageClass}`}/> */}
-            <img className="classOption-image" alt={`illutration of ${characterClass}`} src={image}/>
-            <p className="classOption-text">{characterClass}</p>
+        <button className="classOption-button" key={classe.name} onClick={(e) => chooseClass(e)}>
+            <img className="classOption-image" alt={`illutration of ${classe.name}`} src={classe.img}/>
+            <p className="classOption-text">{classe.name}</p>
         </button>
     )
 }
