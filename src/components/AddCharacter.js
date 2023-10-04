@@ -6,11 +6,7 @@ import Counter from "./Counter";
 import Name from "./Name";
 
 function Card({allCharacters, setAllCharacters}) {
-    const [character, setCharacter] = useState({
-        name:"", 
-        class: {}, 
-        skills: {}
-    });
+    const [character, setCharacter] = useState([]);
     const [characterClass, setCharacterClass] = useState({
         name: "barbarian",
         label: "Barbarian",
@@ -49,8 +45,22 @@ function Card({allCharacters, setAllCharacters}) {
 
 
     function addNewCharacter(e, characterSkills, characterClass, characterName) {
-        e.preventDefault();
-        setCharacter(character.name=characterName, character.class=characterClass, character.skills=characterSkills);
+        console.log()
+        e.preventDefault("characterSkills", characterSkills);
+        e.preventDefault("characterClass", characterClass);
+        e.preventDefault("characterName", characterName);
+        // setCharacter(character.name=characterName, character.class=characterClass, character.skills=characterSkills);
+        character? (
+            setCharacter(
+                [{ characterSkills, characterClass, characterName }]
+            )
+        ) : (
+            console.log("has already a character")
+            // setCharacter(
+            //     [...character, { characterSkills, characterClass, characterName }]
+            // )
+        )
+        
 
 
         console.log(character)

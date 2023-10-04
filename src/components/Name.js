@@ -10,7 +10,6 @@ function Name ({characterName, setCharacterName}) {
     function handleBlur(){
         if (inputValue.length > 2) {
             setCharacterName(characterName = inputValue);
-            console.log("characterName", characterName);
         } 
     }
 
