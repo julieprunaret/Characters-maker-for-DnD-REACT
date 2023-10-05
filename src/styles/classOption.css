@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-.classOption-button:hover {
+.classOption-button:hover, .classOption-button.isSelected {
     border: 1px dashed white;
 }
 

@@ -41,17 +41,31 @@ form {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+    gap: 15px;
     width: 100%;
   }
 
   .AddCharacter-classes button {
     width: 100px;
     height: auto;
-    margin: 10px;
     overflow: hidden;
   }
 
   .AddCharacter-details {
     opacity: 0.6;
+  }
+
+  .AddCharacter-skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+  }
+
+  
+  .AddCharacter-skillsContainer li {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0 10px 10px 10px;
+    text-align: center;
   }
 

@@ -5,8 +5,7 @@ import { useEffect, useState } from "react";
 import Counter from "./Counter";
 import Name from "./Name";
 
-function Card({allCharacters, setAllCharacters}) {
-    const [character, setCharacter] = useState([]);
+function Card({characters, setCharacters}) {
     const [characterClass, setCharacterClass] = useState({
         name: "barbarian",
         label: "Barbarian",
@@ -31,98 +30,58 @@ function Card({allCharacters, setAllCharacters}) {
     const [pointsDistribued, setPointsDistribued] = useState('');
     const pointsTotal = data.characteristics.pointsNumber;
 
-    // const [character, setNewCharacter] = useState({
-    //     name:"", 
-    //     class: {}, 
-    //     skills: {}
-    // });
-
     useEffect (() => {
         const pointsMin = data.characteristics.min * data.characteristics.list.length;	
         setPointsDistribued(pointsMin)
     }, [])
 
-
+    useEffect (() => {
+        console.log(characters)
+    }, [characters])
 
     function addNewCharacter(e, characterSkills, characterClass, characterName) {
         console.log()
-        e.preventDefault("characterSkills", characterSkills);
-        e.preventDefault("characterClass", characterClass);
-        e.preventDefault("characterName", characterName);
-        // setCharacter(character.name=characterName, character.class=characterClass, character.skills=characterSkills);
-        character? (
-            setCharacter(
-                [{ characterSkills, characterClass, characterName }]
+        e.preventDefault();
+
+        characters.length? (
+            setCharacters(
+                [...characters, { characterSkills, characterClass, characterName }]
             )
         ) : (
-            console.log("has already a character")
-            // setCharacter(
-            //     [...character, { characterSkills, characterClass, characterName }]
-            // )
+            setCharacters(
+                [{ characterSkills, characterClass, characterName }]
+            )
         )
         
-
-
-        console.log(character)
-
-        //------------
-        // to put the new character in the characters array
-        //------------
-        
-
-        // allCharacters? (
-        //     setAllCharacters ([
-        //         ...allCharacters,
-        //         { character }
-        //     ])
-        // ) : (
-        //     setAllCharacters ([
-        //         { character }
-        //     ])
-        // )
-
-        //------------
+        console.log(characters)
     }
-
-    // function addNewCharacterGroup(e, character) {
-    //     e.preventDefault();
-
-    //     allCharacters? (
-    //         setAllCharacters ([
-    //             ...allCharacters,
-    //             { character }
-    //         ])
-    //     ) : (
-    //         setAllCharacters ([
-    //             { character }
-    //         ])
-    //     )
-
-    //     console.log(allCharacters)
-    // }
 
     return (
         <form action="">
 
         <Name characterName={characterName} setCharacterName={setCharacterName}/>
                     
-            
             <div>
-            <h3>class</h3>
-            <div className="AddCharacter-classes">
-            {
-                data.classes.map((classe) => 
-                    <ClassOption characterClass={characterClass} setCharacterClass={setCharacterClass} classe={classe}/>      
-                )              
-            }
-
-            </div>
-            
+                <h3>class</h3>
+                <div className="AddCharacter-classes">
+                    {
+                        data.classes.map((classe) => 
+                            <ClassOption characterClass={characterClass} setCharacterClass={setCharacterClass} classe={classe}/>      
+                        )              
+                    }
+                </div>
+                { characterClass ? (
+                    <div>
+                        <p>{characterClass.name}</p>
+                        <p>{characterClass.description}</p>
+                    </div>
+                ):(
+                    <p>no class</p>
+                ) }
             </div>
             <div>
                 <h3>skills</h3>
                 <p>total points distributed : {pointsDistribued}</p>
-
                 {
                     pointsDistribued === pointsTotal ?(
 
@@ -131,29 +90,32 @@ function Card({allCharacters, setAllCharacters}) {
                         <p className="AddCharacter-details">You have {pointsTotal - pointsDistribued} left to distribute</p>
                     )
                 }
-                {
-                
-                    data.characteristics.list.map((characteristic) => (
-                        <li key={characteristic.name}>
-                            <p>{characteristic.name}</p>
-                            <Counter 
-                                setPointsDistribued={setPointsDistribued} 
-                                pointsDistribued={pointsDistribued} 
-                                pointsTotal={pointsTotal} 
-                                characterClass={characterClass}
-                                characterSkills={characterSkills} 
-                                setCharacterSkills={setCharacterSkills} 
-                                name={characteristic.name}
-                                /> 
-                        </li>     
-                        )             
-                )}
-                
+                <ul className="AddCharacter-skillsContainer">
+                    {
+                        data.characteristics.list.map(
+                            (characteristic) => (
+                            <li key={characteristic.name}>
+                                <p>{characteristic.name}</p>
+                                <Counter 
+                                    setPointsDistribued={setPointsDistribued} 
+                                    pointsDistribued={pointsDistribued} 
+                                    pointsTotal={pointsTotal} 
+                                    characterClass={characterClass}
+                                    characterSkills={characterSkills} 
+                                    setCharacterSkills={setCharacterSkills} 
+                                    name={characteristic.name}
+                                    /> 
+                            </li>     
+                            )             
+                        )
+                    }
+                </ul>
+
 
             </div>
 
             <button onClick={(e) => addNewCharacter(e, characterSkills, characterClass, characterName)} className="AddCharacter-button">Create</button>
-            {/* <button onClick={(e) => addNewCharacterGroup(e, character)} className="AddCharacter-button">mettre dans tab</button> */}
+
         </form>
     )
 }
