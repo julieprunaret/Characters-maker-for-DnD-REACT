@@ -112,7 +112,7 @@
     {
       "name": "barbarian",
       "label": "Barbarian",
-      "description": "Blablabla",
+      "description": "Barbarian is one of the base character classes presented in the Player's Handbook. The barbarian is seen as the archetypal warrior who uses brute strength and raw fury to excel in combat, instead of the honed skills of the Fighter or measured strength of the Monk.",
       "img": "images/barbarian.svg",
       "characteristics": [
         {
@@ -124,7 +124,7 @@
     {
       "name": "thief",
       "label": "Thief",
-      "description": "Blablabla",
+      "description": "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn’t employ.",
       "img": "images/thief.svg",
       "characteristics": [
         {
@@ -136,7 +136,7 @@
     {
       "name": "wizard",
       "label": "Wizard",
-      "description": "Blablabla",
+      "description": "The wizard is one of the standard character class in the Dungeons & Dragons fantasy role-playing game. A wizard uses arcane magic, and is considered less effective in melee combat than other classes. ",
       "img": "images/wizard.svg",
       "characteristics": [
         {
@@ -148,7 +148,7 @@
     {
       "name": "bard",
       "label": "Bard",
-      "description": "Blablabla",
+      "description": "The bard is a standard playable character class in many editions of the Dungeons & Dragons fantasy role-playing game.[1] The bard class is versatile, capable of combat and of magic (divine magic in earlier editions, arcane magic in later editions). Bards use their artistic talents to induce magical effects. ",
       "img": "images/bard.svg",
       "characteristics": [
         {
@@ -160,7 +160,7 @@
     {
       "name": "cleric",
       "label": "Cleric",
-      "description": "Blablabla",
+      "description": "Clerics are powerful healers due to the large number of healing and curative magics available to them. With divinely-granted abilities over life or death, they are also able to repel or control undead creatures. Clerics also have specific 'domains' which usually align with the character's alignment and the god that cleric serves. Whether the cleric repels or controls undead is dependent on the cleric's alignment",
       "img": "images/cleric.svg",
       "characteristics": [
         {
@@ -172,7 +172,7 @@
     {
       "name": "warrior",
       "label": "Warrior",
-      "description": "Blablabla",
+      "description": "Warriors were required to maintain the Lawful Good alignment. In addition, compared with other classes the paladin class has one of the most restrictive codes of conduct and paladin characters are expected to demonstrate and embody goodness. Failure to maintain a lawful good alignment or adhere to the code of conduct causes paladins to lose their paladin status and many of their special abilities until they are able to atone",
       "img": "images/warrior.svg",
       "characteristics": [
         {

@@ -3,9 +3,15 @@ body {
   padding: 0;
   margin: 0 auto;
   min-height: 100vh;
-  width: 80%;
+  width: 90%;
   max-width: 1300px;
 }
+
+@media (min-width: 576px) { 
+  body {
+    width: 80%;
+  }
+ }
 
 .App {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -25,12 +31,4 @@ button {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
-}
-
-.app-itemContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 16px;
-    justify-content: left;
-    margin: 20px 0;
 }

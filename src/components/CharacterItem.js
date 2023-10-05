@@ -3,7 +3,7 @@ import "../styles/CharacterItem.css"
 function CharacterItem({characterClass, characterName, characterSkills, characterKey}) {
 
   return (
-      <li key={characterKey} className="characterItem-container">
+      <li className="characterItem-container">
           <h3>{characterName}</h3>
           <img className="classOption-image" alt={`illutration of ${characterClass.name}`} src={characterClass.img}/>
         
@@ -12,7 +12,7 @@ function CharacterItem({characterClass, characterName, characterSkills, characte
                 {
                     Object.keys(characterSkills).map((key, index) => {
                         return (
-                        <span key={index}>
+                        <span key={`${characterKey}-${key}`}>
                             {key} : {characterSkills[key]}
                         </span>
                         );

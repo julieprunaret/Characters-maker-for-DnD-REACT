@@ -6,19 +6,15 @@ import Counter from "./Counter";
 import Name from "./Name";
 
 function Card({characters, setCharacters}) {
-    const [characterClass, setCharacterClass] = useState({
-        name: "barbarian",
-        label: "Barbarian",
-        description: "Blablabla",
-        img: "images/barbarian.svg",
-        characteristics: [
-            {
-            name: "strength",
-            modifier: 2
-            }
-        ]
-    });
     const [characterName, setCharacterName] = useState("");
+
+    const [characterClass, setCharacterClass] = useState({
+        name: data.classes[0].name,
+        label: data.classes[0].name,
+        description: data.classes[0].description,
+        img: data.classes[0].img,
+        characteristics: data.classes[0].characteristics
+    });
     const [characterSkills, setCharacterSkills] = useState({
         strength: data.characteristics.min,
         dexterity: data.characteristics.min,
@@ -29,31 +25,38 @@ function Card({characters, setCharacters}) {
     });
     const [pointsDistribued, setPointsDistribued] = useState('');
     const pointsTotal = data.characteristics.pointsNumber;
+    const [errorSentence, setErrorSentence] = useState("");
 
+    // there is a minimum of points number (nomber of skills * number min of point/skill)
     useEffect (() => {
         const pointsMin = data.characteristics.min * data.characteristics.list.length;	
         setPointsDistribued(pointsMin)
     }, [])
 
-    useEffect (() => {
-        console.log(characters)
-    }, [characters])
-
     function addNewCharacter(e, characterSkills, characterClass, characterName) {
-        console.log()
         e.preventDefault();
-
-        characters.length? (
-            setCharacters(
-                [...characters, { characterSkills, characterClass, characterName }]
+        // the character must have a name and a number of skills to be create
+        if (characterName.length > 1 && pointsDistribued === pointsTotal) {
+            // if there is already characters in the tab, using the spread operator to merge them
+            characters.length? (
+                setCharacters(
+                    [...characters, { characterSkills, characterClass, characterName }]
+                )
+            ) : (
+                 // if there is no chracter, we send the object without merging
+                setCharacters(
+                    [{ characterSkills, characterClass, characterName }]
+                )
             )
-        ) : (
-            setCharacters(
-                [{ characterSkills, characterClass, characterName }]
-            )
-        )
-        
-        console.log(characters)
+            // we clean the error message
+            setErrorSentence("")
+        } else if (characterName.length < 1) {
+            // if the name is empty
+            setErrorSentence("Please choose a name for your character")
+        } else {
+            // if all points arn't distributed
+            setErrorSentence("Please distribute all the points to your character")
+        }
     }
 
     return (
@@ -66,7 +69,7 @@ function Card({characters, setCharacters}) {
                 <div className="AddCharacter-classes">
                     {
                         data.classes.map((classe) => 
-                            <ClassOption characterClass={characterClass} setCharacterClass={setCharacterClass} classe={classe}/>      
+                            <ClassOption characterClass={characterClass} key={classe.name} setCharacterClass={setCharacterClass} classe={classe}/>      
                         )              
                     }
                 </div>
@@ -104,18 +107,15 @@ function Card({characters, setCharacters}) {
                                     characterSkills={characterSkills} 
                                     setCharacterSkills={setCharacterSkills} 
                                     name={characteristic.name}
+                                    min={data.characteristics.min}
                                     /> 
                             </li>     
                             )             
                         )
                     }
                 </ul>
-
-
             </div>
-
-            <button onClick={(e) => addNewCharacter(e, characterSkills, characterClass, characterName)} className="AddCharacter-button">Create</button>
-
+            <button onClick={(e) => addNewCharacter(e, characterSkills, characterClass, characterName)} className="AddCharacter-button">Create</button><span>{errorSentence}</span>
         </form>
     )
 }

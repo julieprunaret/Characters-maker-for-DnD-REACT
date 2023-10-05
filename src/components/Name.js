@@ -3,10 +3,12 @@ import { useState } from "react";
 function Name ({characterName, setCharacterName}) {
     const [inputValue, setInputValue] = useState('');
 
+    // we collect the value from the input
     function handleInput(e){
         return (setInputValue(e.target.value))
     }
 
+    // once the user clicks out of the input, the value is saved if the name is > 2 caracters
     function handleBlur(){
         if (inputValue.length > 2) {
             setCharacterName(characterName = inputValue);
